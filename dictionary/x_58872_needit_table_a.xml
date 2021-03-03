@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Table A" max_length="40" name="x_58872_needit_table_a" sizeclass="0" type="collection">
+        <element label="Email" max_length="255" name="email" type="string_full_utf8"/>
+        <element label="Phone Number" mandatory="true" max_length="10" name="phone_number" type="integer"/>
+    </element>
+</database>

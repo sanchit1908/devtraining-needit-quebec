@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Table 1" max_length="40" name="x_58872_needit_table_1" sizeclass="2" type="collection">
+        <element label="Email" max_length="100" name="email" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Phone number" max_length="10" name="phone_number" type="string"/>
+    </element>
+</database>

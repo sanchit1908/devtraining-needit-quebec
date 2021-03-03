@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.displayManagerName </api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>displayManagerName </name>
+        <script><![CDATA[var displayManagerName = Class.create();
+displayManagerName.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+   
+    demoTestFunction: function() {
+       
+        var userid = this.getParameter('sysparm_user');
+       
+        var gr = new GlideRecord('sys_user');
+       
+        gr.addQuery('sys_id',userid);
+       
+        gr.query();
+       
+        if(gr.next())
+            {
+                var a = gr.manager.getDisplayValue();
+               
+                return a;
+            }
+    },
+    type: 'displayManagerName'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-03 06:24:03</sys_created_on>
+        <sys_id>1d7733d72f2e20101ca6f3ecf699b60e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>displayManagerName </sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_1d7733d72f2e20101ca6f3ecf699b60e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-03 06:24:03</sys_updated_on>
+    </sys_script_include>
+</record_update>
